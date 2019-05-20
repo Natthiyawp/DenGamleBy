@@ -64,14 +64,14 @@ header ul li {}
 
 header ul li i {}
 
-header ul li i .fas {}
+header ul li i.fas {}
 
-header ul li i .fab {}
+header ul li i.fab {}
 
-.grid header ul li i .fas a {
+.grid header ul li i.fas a {
     text-decoration: none;
 }
 
-.grid header ul li i .fab a {
+.grid header ul li i.fab a {
     text-decoration: none;
 }
