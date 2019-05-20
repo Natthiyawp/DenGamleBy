@@ -52,6 +52,25 @@ p.button {
     font-weight: bold;
     font-size: 10px;
 }
+
 /* header */
 
+header {
+    background-color: var(--light-blue);
+}
 
+header figure {}
+
+header figure img {}
+
+header ul {}
+
+header ul li {}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a i.fas {}
+
+header ul li a i.fab {}
