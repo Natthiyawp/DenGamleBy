@@ -1,3 +1,5 @@
+*{box-sizing: border-box;margin: 0; padding: 0; font-family: Arial, Georgia, 'Times New Roman', serif; letter-spacing: 1px;}
+/* Variables */
 :root {
     --dark-blue: #0E316A;
     --blue: #007FEB;
@@ -19,32 +21,34 @@ h2 {
 
 h3 {
     font-size: 20px;
+    line-height: 1.5;
 }
 
-p .quote {
+p.quote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 20px;
 }
 
-p .large {
+p.large {
     font-weight: bold;
     font-size: 14px;
 }
 
 p {
     font-size: 14px;
+    line-height: 1.5;
 }
 
-p .sek {
+p.sek {
     font-size: 12px;
 }
-p .placeholder {
+p.placeholder {
     font-style: italic;
     font-size: 12px;
 }
 
-p .button {
+p.button {
     font-weight: bold;
     font-size: 10px;
 }
