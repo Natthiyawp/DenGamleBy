@@ -1,0 +1,50 @@
+:root {
+    --dark-blue: #0E316A;
+    --blue: #007FEB;
+    --light-blue: #BCE0FD;
+    --white: #F1F9FF;
+    --gray: #F2F2F2;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p .quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+p .large {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+p .sek {
+    font-size: 12px;
+}
+p .placeholder {
+    font-style: italic;
+    font-size: 12px;
+}
+
+p .button {
+    font-weight: bold;
+    font-size: 10px;
+}
