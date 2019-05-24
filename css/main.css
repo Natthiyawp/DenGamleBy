@@ -58,7 +58,7 @@ p.button {
 header {
     background-color: var(--light-blue);
 }
-
+/*
 header figure {}
 
 header figure img {}
@@ -66,13 +66,13 @@ header figure img {}
 header ul {}
 
 header ul li {}
-
+*/
 header ul li a {
     text-decoration: none;
 }
-
+/*
 header ul li a i.fas {}
-
+*/
 /* Forside */
 .grid {
     display: grid;
