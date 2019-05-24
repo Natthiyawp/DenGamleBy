@@ -53,24 +53,94 @@ p.button {
     font-size: 10px;
 }
 
-/* header */
+/* Header */
 
 header {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
 }
 
 header figure {}
 
-header figure img {}
-
-header ul {}
-
-header ul li {}
-
-header ul li a {
-    text-decoration: none;
+header figure svg {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 15px 15px;
 }
 
-header ul li a i.fas {}
+header figure svg#Layer_1 path {
+    fill: var(--white);
+}
 
-header ul li a i.fab {}
+header hr {
+    color: var(--white);
+    border: solid 2px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    width: 100%;
+    text-align: center;
+}
+
+header ul li a {
+    /* display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 30px;
+    color: var(--white); */
+
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+    text-decoration: none
+}
+
+header ul li a i.fas {
+    min-width: 80px;
+}
+
+header ul li a i.fab {
+    min-width: 80px;
+}
+
+/* Header END */
+
+/* Artikel */
+
+#Artikel {
+   
+}
+
+#Artikel .grid {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 100px 100px 150px;
+    grid-template-areas: 
+    "header nav article article"
+    "header nav article article"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+
+#Artikel .grid header {
+    grid-area: header;
+}
+
+#Artikel .grid nav {
+    grid-area: nav;
+}
+
+
+
+#Artikel .grid footer {
+    grid-area: footer;
+    background-color: var(--dark-blue);
+}
+
+/* Artikel END */
