@@ -58,6 +58,12 @@ p.button {
 header {
     background-color: var(--blue);
 }
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+}
 
 header figure {}
 
@@ -158,6 +164,28 @@ body#forside .grid header{
 
 body#forside .grid main{
     grid-area: main;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "vid vid vid"
+    "vid vid vid"
+    "main1 main2 main3"
+}
+
+body#forside .grid main #video {
+    grid-area: vid;
+}
+
+body#forside .grid main video {
+    width: 100%;
+}
+
+body#forside .grid main #video .text {
+    position: relative;
+    top: -50%;
+    text-align: center;
+    color: var(--white)
 }
 
 body#forside .grid main div #box1 {
@@ -174,5 +202,25 @@ body#forside .grid main div #box3 {
 
 body#forside .grid footer#footer {
     grid-area: footer;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 100%;
+    grid-template-areas:
+    "adresse info hours social"
 }
 
+body#forside .grid footer#footer #adresse {
+    grid-area: adresse;
+}
+
+body#forside .grid footer#footer #info {
+    grid-area: info;
+}
+
+body#forside .grid footer#footer #hours {
+    grid-area: hours;
+}
+
+body#forside .grid footer#footer #social {
+    grid-area: social;
+}
