@@ -139,13 +139,37 @@ header ul li a i.fab {
 /* Artikel END */
 
 /* Forside */
-.grid {
+body#forside .grid {
     display: grid;
     grid-auto-columns: 15% 1fr 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 15%;
     grid-template-areas:
     "header vid vid vid"
     "header vid vid vid"
-    "header main main main"
+    "header main1 main2 main3"
     "footer footer footer footer "
 }
+body#forside .grid header{
+    grid-area: header;
+}
+
+body#forside .grid main section#video {
+    grid-area: vid;
+}
+
+body#forside .grid main div #box1 {
+    grid-area: main1;
+}
+
+body#forside .grid main div #box2 {
+    grid-area: main2;
+}
+
+body#forside .grid main div #box3 {
+    grid-area: main3;
+}
+
+body#forside .grid footer#footer {
+    grid-area: footer;
+}
+
