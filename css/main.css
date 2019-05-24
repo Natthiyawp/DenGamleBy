@@ -58,7 +58,7 @@ p.button {
 header {
     background-color: var(--blue);
 }
-
+/*
 header figure {}
 
 header figure svg {
@@ -144,6 +144,7 @@ header ul li a i.fab {
 }
 
 /* Artikel END */
+
 /* Forside */
 .grid {
     display: grid;
