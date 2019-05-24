@@ -64,7 +64,7 @@ header figure {}
 header figure svg {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 90%;
     padding: 15px 15px;
 }
 
@@ -112,8 +112,8 @@ header ul li a i.fab {
 
 #Artikel .grid {
     display: grid;
-    grid-template-columns: 15% 20% 1fr;
-    grid-template-rows: 100px 100px 150px;
+    grid-template-columns: 15% 25% 1fr;
+    grid-template-rows: 1fr 1fr 15%;
     grid-template-areas: 
     "header nav article article"
     "header nav article article"
@@ -129,8 +129,35 @@ header ul li a i.fab {
     grid-area: nav;
 }
 
+#Artikel .article-nav {}
+
+#Artikel .article-nav ul {}
+
+#Artikel .article-nav li {}
+
+#Artikel .article-nav figure.img img{
+    width: 100%;
+}
+
+#Artikel .article-nav footer {}
+
+#Artikel .article-nav footer figure {}
+
+#Artikel .article-nav footer figure i.fas {}
+
+#Artikel .article-nav footer figcaption {}
+
+
 #Artikel .grid article {
     grid-area: article;
+}
+
+#Artikel #article-wrapper {}
+
+#Artikel #article-wrapper figure {}
+
+#Artikel #article-wrapper figure img {
+    width: 100%;
 }
 
 
