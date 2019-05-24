@@ -147,17 +147,17 @@ body#forside .grid {
     grid-auto-columns: 15% 1fr 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 15%;
     grid-template-areas:
-    "header vid vid vid"
-    "header vid vid vid"
-    "header main1 main2 main3"
+    "header main main main"
+    "header main main main"
+    "header main main main"
     "footer footer footer footer "
 }
 body#forside .grid header{
     grid-area: header;
 }
 
-body#forside .grid main section#video {
-    grid-area: vid;
+body#forside .grid main{
+    grid-area: main;
 }
 
 body#forside .grid main div #box1 {
