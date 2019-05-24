@@ -131,7 +131,7 @@ header ul li a i.fab {
 
 
 
-#Artikel .grid footer {
+#Artikel .grid footer#footer {
     grid-area: footer;
     background-color: var(--dark-blue);
 }
