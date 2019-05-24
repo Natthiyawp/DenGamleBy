@@ -112,7 +112,7 @@ header ul li a i.fab {
 
 #Artikel .grid {
     display: grid;
-    grid-template-columns: 15% 1fr 60%;
+    grid-template-columns: 15% 20% 1fr;
     grid-template-rows: 100px 100px 150px;
     grid-template-areas: 
     "header nav article article"
@@ -129,6 +129,9 @@ header ul li a i.fab {
     grid-area: nav;
 }
 
+#Artikel .grid article {
+    grid-area: article;
+}
 
 
 #Artikel .grid footer#footer {
