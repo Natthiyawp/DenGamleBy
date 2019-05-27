@@ -257,7 +257,7 @@ body#forside .grid main #video .text {
     color: var(--white)
 }
 
-body#forside .grid main #info {
+body#forside .grid main .info {
     grid-area: main;
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
@@ -266,38 +266,38 @@ body#forside .grid main #info {
     "main1 main2 main3"
 }
 
-body#forside .grid main #info .box {
+body#forside .grid main .info .box {
     margin: auto;
 }
 
-body#forside .grid main #info #box1 {
+body#forside .grid main .info #box1 {
     grid-area: main1;
 }
 
-body#forside .grid main #info #box2 {
+body#forside .grid main .info #box2 {
     grid-area: main2;
 }
 
-body#forside .grid main #info #box3 {
+body#forside .grid main .info #box3 {
     grid-area: main3;
 }
 
-body#forside .grid main #info h2 {
+body#forside .grid main .info h2 {
     border-top: solid 3px var(--dark-blue);
     border-bottom: solid 3px var(--dark-blue);
     text-align: center;
     margin-bottom: 20px;
 }
 
-body#forside .grid main #info .box p:last-of-type {
+body#forside .grid main .info .box p:last-of-type {
     margin-bottom: 20px;
 }
 
-body#forside .grid main #info a{
+body#forside .grid main .info a{
     text-decoration: none;
     color: var(--dark-blue);
 }
 
-body#forside .grid main #info a i {
+body#forside .grid main .info a i {
     margin-right: 5px;
 }
