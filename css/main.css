@@ -308,3 +308,18 @@ body#forside .grid main .desc img {
 }
 
 /* Tema END */
+
+/* Footer */
+
+body#galleri .grid {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 15%;
+    grid-template-areas:
+    "header img1 img 1 img2 img2"
+    "header img3 img3 img4 img5"
+    "header img3 img3 img6 img7"
+    "footer footer footer footer footer"
+}
+
+/* Footer END */
