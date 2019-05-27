@@ -154,9 +154,7 @@ footer#footer #social i {
 
 /* Artikel */
 
-#Artikel {
-   
-}
+#Artikel {}
 
 #Artikel .grid {
     display: grid;
@@ -181,10 +179,14 @@ footer#footer #social i {
 
 #Artikel .article-nav ul {}
 
-#Artikel .article-nav li {}
+#Artikel .article-nav li {
+    padding: 10px;
+}
 
 #Artikel .article-nav figure.img img{
     width: 100%;
+    border: 5px solid #e7e5e5;
+    border-radius: 5px;
 }
 
 #Artikel .article-nav footer {}
@@ -206,12 +208,31 @@ footer#footer #social i {
 
 #Artikel #article-wrapper figure img {
     width: 100%;
+    padding: 10px;
 }
-
 
 #Artikel .grid footer#footer {
     grid-area: footer;
     background-color: var(--dark-blue);
+}
+
+#Artikel .grid article #article-wrapper p.large {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+#Artikel .grid p {
+    padding: 10px;
+}
+
+#Artikel .grid h1 {
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+#Artikel .grid h2 {
+    padding-top: 5px;
 }
 
 /* Artikel END */
