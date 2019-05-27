@@ -110,6 +110,10 @@ header ul li a i.fab {
 
 /* Header END */
 
+body {
+    background: var(--white);
+}
+
 /* Footer */
 
 footer#footer {
@@ -148,6 +152,7 @@ footer#footer p.large {
 }
 footer#footer #social i {
     -webkit-text-fill-color: var(--white);
+    padding: 15px;
 }
 
 /* Footer END */
