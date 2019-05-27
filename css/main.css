@@ -65,8 +65,6 @@ header nav {
     width: 15%;
 }
 
-header figure {}
-
 header figure svg {
     display: block;
     margin: auto;
@@ -154,8 +152,6 @@ footer#footer #social i {
 
 /* Artikel */
 
-#Artikel {}
-
 #Artikel .grid {
     display: grid;
     grid-template-columns: 15% 25% 1fr;
@@ -175,10 +171,6 @@ footer#footer #social i {
     grid-area: nav;
 }
 
-#Artikel .article-nav {}
-
-#Artikel .article-nav ul {}
-
 #Artikel .article-nav li {
     padding: 10px;
 }
@@ -189,22 +181,9 @@ footer#footer #social i {
     border-radius: 5px;
 }
 
-#Artikel .article-nav footer {}
-
-#Artikel .article-nav footer figure {}
-
-#Artikel .article-nav footer figure i.fas {}
-
-#Artikel .article-nav footer figcaption {}
-
-
 #Artikel .grid article {
     grid-area: article;
 }
-
-#Artikel #article-wrapper {}
-
-#Artikel #article-wrapper figure {}
 
 #Artikel #article-wrapper figure img {
     width: 100%;
@@ -213,7 +192,6 @@ footer#footer #social i {
 
 #Artikel .grid footer#footer {
     grid-area: footer;
-    background-color: var(--dark-blue);
 }
 
 #Artikel .grid article #article-wrapper p.large {
@@ -322,3 +300,30 @@ body#forside .grid main .info a{
 body#forside .grid main .info a i {
     margin-right: 5px;
 }
+
+
+/* Tema */
+
+/* grid */
+#Tema .grid {
+    display: grid;
+    grid-template-columns: 15% 25% 1fr;
+    grid-template-rows: 1fr 1fr 15%;
+    grid-template-areas: 
+    "header nav article article"
+    "header nav article article"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+
+/* header */
+#Tema .grid header {
+    grid-area: header;
+}
+
+/* Footer */
+#Tema .grid footer {
+    grid-area: footer;
+}
+
+/* Tema END */
