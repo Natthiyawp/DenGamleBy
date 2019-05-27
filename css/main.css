@@ -115,6 +115,39 @@ header ul li a i.fab {
 footer#footer {
     background: var(--dark-blue);
     color: var(--white);
+    grid-area: footer;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 100%;
+    grid-template-areas:
+    "adresse info hours social"
+}
+
+footer#footer #adresse, #info, #hours, #dato, #social {
+    margin: auto auto;
+}
+
+footer#footer #adresse {
+    grid-area: adresse;
+}
+
+footer#footer #info {
+    grid-area: info;
+}
+
+body#forside .grid footer#footer #hours {
+    grid-area: hours;
+}
+
+body#forside .grid footer#footer #social {
+    grid-area: social;
+}
+
+footer#footer p.large {
+    padding-bottom: 20px;
+}
+footer#footer #social i {
+    -webkit-text-fill-color: var(--white);
 }
 
 /* Footer END */
@@ -206,7 +239,7 @@ body#forside .grid main{
     grid-template-areas:
     "vid vid vid"
     "vid vid vid"
-    "main1 main2 main3"
+    "main main main"
 }
 
 body#forside .grid main #video {
@@ -224,39 +257,47 @@ body#forside .grid main #video .text {
     color: var(--white)
 }
 
-body#forside .grid main div #box1 {
+body#forside .grid main #info {
+    grid-area: main;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 100%;
+    grid-template-areas:
+    "main1 main2 main3"
+}
+
+body#forside .grid main #info .box {
+    margin: auto;
+}
+
+body#forside .grid main #info #box1 {
     grid-area: main1;
 }
 
-body#forside .grid main div #box2 {
+body#forside .grid main #info #box2 {
     grid-area: main2;
 }
 
-body#forside .grid main div #box3 {
+body#forside .grid main #info #box3 {
     grid-area: main3;
 }
 
-body#forside .grid footer#footer {
-    grid-area: footer;
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 100%;
-    grid-template-areas:
-    "adresse info hours social"
+body#forside .grid main #info h2 {
+    border-top: solid 3px var(--dark-blue);
+    border-bottom: solid 3px var(--dark-blue);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-body#forside .grid footer#footer #adresse {
-    grid-area: adresse;
+body#forside .grid main #info .box p:last-of-type {
+    margin-bottom: 20px;
 }
 
-body#forside .grid footer#footer #info {
-    grid-area: info;
+body#forside .grid main #info a{
+    text-decoration: none;
+    color: var(--dark-blue);
 }
 
-body#forside .grid footer#footer #hours {
-    grid-area: hours;
-}
-
-body#forside .grid footer#footer #social {
-    grid-area: social;
+body#forside .grid main #info a i {
+    margin-right: 5px;
 }
