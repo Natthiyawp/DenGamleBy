@@ -178,6 +178,7 @@ footer#footer #social i {
 
 #Artikel .article-nav li {
     padding: 10px;
+    list-style: none;
 }
 
 #Artikel .article-nav figure.img img{
