@@ -108,6 +108,10 @@ header ul li a i.fab {
 
 /* Header END */
 
+body {
+    background: var(--white);
+}
+
 /* Footer */
 
 footer#footer {
@@ -121,7 +125,7 @@ footer#footer {
     "adresse info hours social"
 }
 
-footer#footer #adresse, #info, #hours, #dato, #social {
+footer#footer #adresse, .info, #hours, #dato, #social {
     margin: auto auto;
 }
 
@@ -129,7 +133,7 @@ footer#footer #adresse {
     grid-area: adresse;
 }
 
-footer#footer #info {
+footer#footer .info {
     grid-area: info;
 }
 
@@ -146,6 +150,7 @@ footer#footer p.large {
 }
 footer#footer #social i {
     -webkit-text-fill-color: var(--white);
+    padding: 15px;
 }
 
 /* Footer END */
@@ -254,6 +259,10 @@ body#forside .grid main #video .text {
     top: -50%;
     text-align: center;
     color: var(--white)
+}
+body#forside .grid main #video .text i {
+    margin-top: 50px;
+    font-size: 40px;
 }
 
 body#forside .grid main .info {
