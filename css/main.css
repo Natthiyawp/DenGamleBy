@@ -48,9 +48,10 @@ p.placeholder {
     font-size: 12px;
 }
 
-p.button {
+p.button, tr {
     font-weight: bold;
     font-size: 10px;
+    text-align: left;
 }
 
 /* Header */
@@ -139,6 +140,9 @@ footer#footer .info {
 
 body#forside .grid footer#footer #hours {
     grid-area: hours;
+}
+body#forside .grid footer#footer #hours tr {
+    padding: 10px;
 }
 
 body#forside .grid footer#footer #social {
