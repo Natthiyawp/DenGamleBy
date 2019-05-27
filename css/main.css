@@ -110,6 +110,15 @@ header ul li a i.fab {
 
 /* Header END */
 
+/* Footer */
+
+footer#footer {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+/* Footer END */
+
 /* Artikel */
 
 #Artikel {
