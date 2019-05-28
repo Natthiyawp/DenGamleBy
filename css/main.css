@@ -58,6 +58,7 @@ p.button, tr {
 
 header {
     background-color: var(--blue);
+    grid-area: header;
 }
 header nav {
     position: fixed;
@@ -316,10 +317,43 @@ body#galleri .grid {
     grid-template-columns: 15% 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 15%;
     grid-template-areas:
-    "header img1 img 1 img2 img2"
-    "header img3 img3 img4 img5"
-    "header img3 img3 img6 img7"
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
     "footer footer footer footer footer"
 }
 
-/* Footer END */
+body#galleri .grid main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 img1 img2 img2"
+    "img3 img3 img4 img4"
+    "img5 img5 img6 img6"
+}
+
+body#galleri .grid main img {
+    width: 100%;
+    padding: 5px;
+}
+
+body#galleri .grid main #img1 {
+    grid-area: img1;
+}
+body#galleri .grid main #img2 {
+    grid-area: img2;
+}
+body#galleri .grid main #img3 {
+    grid-area: img3;
+}
+body#galleri .grid main #img4 {
+    grid-area: img4;
+}
+body#galleri .grid main #img5 {
+    grid-area: img5;
+}
+body#galleri .grid main #img6 {
+    grid-area: img6;
+}
