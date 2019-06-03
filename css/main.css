@@ -48,15 +48,17 @@ p.placeholder {
     font-size: 12px;
 }
 
-p.button {
+p.button, tr {
     font-weight: bold;
     font-size: 10px;
+    text-align: left;
 }
 
 /* Header */
 
 header {
     background-color: var(--blue);
+    grid-area: header;
 }
 header nav {
     position: fixed;
@@ -139,6 +141,9 @@ footer#footer .info {
 
 body#forside .grid footer#footer #hours {
     grid-area: hours;
+}
+body#forside .grid footer#footer #hours tr {
+    padding: 10px;
 }
 
 body#forside .grid footer#footer #social {
@@ -266,51 +271,18 @@ body#forside .grid main #video .text i {
     font-size: 40px;
 }
 
-body#forside .grid main .info {
+body#forside .grid main .desc {
     grid-area: main;
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 100%;
-    grid-template-areas:
-    "main1 main2 main3"
-}
-
-body#forside .grid main .info .box {
-    margin: auto;
-}
-
-body#forside .grid main .info #box1 {
-    grid-area: main1;
-}
-
-body#forside .grid main .info #box2 {
-    grid-area: main2;
-}
-
-body#forside .grid main .info #box3 {
-    grid-area: main3;
-}
-
-body#forside .grid main .info h2 {
-    border-top: solid 3px var(--dark-blue);
-    border-bottom: solid 3px var(--dark-blue);
     text-align: center;
-    margin-bottom: 20px;
-}
-
-body#forside .grid main .info .box p:last-of-type {
-    margin-bottom: 20px;
-}
-
-body#forside .grid main .info a{
-    text-decoration: none;
+    width: 50%;
+    margin: 0 auto;
     color: var(--dark-blue);
 }
 
-body#forside .grid main .info a i {
-    margin-right: 5px;
+body#forside .grid main .desc img {
+    margin: 10px;
+    width: 30%;
 }
-
 
 /* Tema */
 
@@ -396,3 +368,85 @@ body#forside .grid main .info a i {
 }
 
 /* Tema END */
+
+/* Footer */
+
+body#galleri .grid {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 15%;
+    grid-template-areas:
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "footer footer footer footer footer"
+}
+
+body#galleri .grid main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 img1 img2 img2"
+    "img3 img3 img4 img4"
+    "img5 img5 img6 img6"
+}
+
+body#galleri .grid main img {
+    width: 100%;
+    padding: 5px;
+}
+
+body#galleri .grid main #img1 {
+    grid-area: img1;
+}
+body#galleri .grid main #img2 {
+    grid-area: img2;
+}
+body#galleri .grid main #img3 {
+    grid-area: img3;
+}
+body#galleri .grid main #img4 {
+    grid-area: img4;
+}
+body#galleri .grid main #img5 {
+    grid-area: img5;
+}
+body#galleri .grid main #img6 {
+    grid-area: img6;
+}
+body#galleri .lightbox-opened {
+    background-color: #333;
+    background-color: rgba(#333, 0.9);
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    padding: 24px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    
+    &:before {
+      background-color: #333;
+      background-color: rgba(#333, 0.9);
+      color: #eee;
+      content: "x";
+      font-family: sans-serif;
+      padding: 6px 12px;
+      position: fixed;
+      text-transform: uppercase;
+    }
+    
+    img {
+      box-shadow: 0 0 6px 3px #333;
+    }
+}
+  
+  // No Background Scroll
+  
+body#galleri .no-scroll {
+    overflow: hidden;
+}
