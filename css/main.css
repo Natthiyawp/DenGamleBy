@@ -188,17 +188,19 @@ footer#footer #social i {
 
 #Artikel .article-nav figure.img img{
     width: 100%;
-    border: 5px solid #e7e5e5;
+    border: 5px solid gray;
     border-radius: 5px;
 }
 
 #Artikel .grid article {
     grid-area: article;
+    padding: 10px;
 }
 
 #Artikel #article-wrapper figure img {
     width: 100%;
-    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 15px;
 }
 
 #Artikel .grid footer#footer {
@@ -292,8 +294,8 @@ body#forside .grid main .desc img {
     grid-template-columns: 15% 25% 1fr;
     grid-template-rows: 1fr 1fr 15%;
     grid-template-areas: 
-    "header nav article article"
-    "header nav article article"
+    "header tidslinje tidslinje tidslinje"
+    "header spil spil spil"
     "footer footer footer footer";
     grid-gap: 5px;
 }
@@ -302,6 +304,67 @@ body#forside .grid main .desc img {
 #Tema .grid header {
     grid-area: header;
 }
+
+/* Tidslinje */
+#Tema .grid #tidslinje {
+    grid-area: tidslinje;
+}
+
+#Tema .grid #tidslinje ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Tema .grid #tidslinje li {
+    width: 33.33%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#Tema .grid #tidslinje figure {
+    position: relative;
+    padding: 20px;
+}
+
+#Tema .grid #tidslinje img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+} 
+
+#Tema .grid #tidslinje figcaption {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #faebd791;
+    width: 45%
+}
+
+#Tema .grid #tidslinje i{
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Tema .grid #tidslinje i.fas.down {
+    position: absolute;
+    right: 170px;
+    top: 100%;
+}
+
+/* Vendespil */
+#Tema .grid .scene {
+    grid-area: spil;
+}
+
+#Tema .grid .scene .card {}
+
+#Tema .grid .scene .card .cardFace {}
 
 /* Footer */
 #Tema .grid footer {
