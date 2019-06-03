@@ -324,6 +324,7 @@ body#galleri .grid {
 }
 
 body#galleri .grid main {
+    margin-bottom: 25px;
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -356,6 +357,7 @@ body#galleri .grid main #img5 {
 }
 body#galleri .grid main #img6 {
     grid-area: img6;
+    margin-bottom: 5px;
 }
 body#galleri .lightbox-opened {
     background-color: #333;
