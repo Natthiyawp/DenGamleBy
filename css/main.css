@@ -188,17 +188,19 @@ footer#footer #social i {
 
 #Artikel .article-nav figure.img img{
     width: 100%;
-    border: 5px solid #e7e5e5;
+    border: 5px solid gray;
     border-radius: 5px;
 }
 
 #Artikel .grid article {
     grid-area: article;
+    padding: 10px;
 }
 
 #Artikel #article-wrapper figure img {
     width: 100%;
-    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 15px;
 }
 
 #Artikel .grid footer#footer {
@@ -323,7 +325,7 @@ body#forside .grid main .desc img {
 
 #Tema .grid #tidslinje figure {
     position: relative;
-    padding: 10px;
+    padding: 20px;
 }
 
 #Tema .grid #tidslinje img {
@@ -337,7 +339,7 @@ body#forside .grid main .desc img {
 #Tema .grid #tidslinje figcaption {
     padding: 10px 20px;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     background-color: #faebd791;
     width: 45%
 }
@@ -349,8 +351,10 @@ body#forside .grid main .desc img {
     transform: translateY(-50%);
 }
 
-#Tema .grid #tidslinje i.fas {
-
+#Tema .grid #tidslinje i.fas.down {
+    position: absolute;
+    right: 170px;
+    top: 100%;
 }
 
 /* Vendespil */
