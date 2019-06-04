@@ -432,7 +432,10 @@ body#galleri .grid main #img6 {
 }
 
 body#galleri .fadeIn {
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 0.5s forwards;
+}
+body#galleri .fadeOut {
+    animation: fadeOut 0.5s forwards;
 }
 
 body#galleri .lightbox {
@@ -464,8 +467,8 @@ body#galleri .lightbox-opened {
     100%{opacity: 1;}
 }
 @keyframes fadeOut {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
 body#galleri .lightbox-opened img {
