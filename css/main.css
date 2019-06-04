@@ -360,9 +360,17 @@ body#forside .grid main .desc img {
 /* Vendespil */
 #Tema .grid .scene {
     grid-area: spil;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
-#Tema .grid .scene .card {}
+#Tema .grid .scene .card {
+    /* width: 300px;
+    height: 200px;
+    background-color: var(--gray) */
+}
 
 #Tema .grid .scene .card .cardFace {}
 
