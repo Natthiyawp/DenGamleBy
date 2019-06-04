@@ -21,9 +21,8 @@ $(function () {
     openLightbox(figure);
     // Close lightbox
     function close(lightboxOpened, lightbox){    
-        // Click on figure -> Remove lightbox
-        $('.'+lightboxOpened).on('click', function() {
-            // openL.off();
+        // Click on figure or div -> Remove lightbox
+        $('.'+lightboxOpened + "," + '.'+lightbox).on('click', function() {
             // Aktiver scroll igen
             $('body').removeClass('no-scroll');
             // Fjern figure
@@ -34,14 +33,5 @@ $(function () {
             //     console.log(this);
             // },500);
         });
-        // Click on div -> Remove lightbox
-        $('.'+lightbox).on('click', function() {
-            // Aktiver scroll igen
-            $('body').removeClass('no-scroll');
-            // Fjern Figure
-            $('.'+lightboxOpened).remove();
-            // Fjern Div
-            $('.'+lightbox).remove();
-        });
-    } 
+    }; 
 });
