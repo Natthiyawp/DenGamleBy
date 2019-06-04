@@ -7,6 +7,7 @@ $(function () {
     function openLightbox(figure) {
         console.log(figure);
         figure.on('click', function(e) {
+            var denne   =   $(this);
             e.preventDefault();
             var img = $(this).find('img').attr('src');
             var div = '<div class="'+lightbox+'"></div>'
@@ -14,24 +15,27 @@ $(function () {
             $('body').addClass('no-scroll');
             $('body').append(path);
             $('body').append(div);
-            close(lightboxOpened, lightbox);
+            $('.'+lightboxOpened).addClass('fadeIn');
+            close(lightboxOpened, lightbox, denne);
             //  console.log(lightboxOpened, lightbox)
         });
     };
     openLightbox(figure);
     // Close lightbox
-    function close(lightboxOpened, lightbox){    
+    function close(lightboxOpened, lightbox, denne){    
         // Click on figure or div -> Remove lightbox
         $('.'+lightboxOpened + "," + '.'+lightbox).on('click', function() {
             // Aktiver scroll igen
             $('body').removeClass('no-scroll');
             // Fjern figure
-            $('.'+lightboxOpened).remove();
             // Fjern div
-            $('.'+lightbox).remove();
-            // var t   =  setTimeout(function(){
-            //     console.log(this);
-            // },500);
+            $(denne).addClass('fadeOut');
+            $('.fadeIn').removeClass('fadeIn');
+            var t   =  setTimeout(function(){
+                $('.'+lightbox).remove();
+                $('.'+lightboxOpened).remove();
+                
+            },500);
         });
     }; 
 });
