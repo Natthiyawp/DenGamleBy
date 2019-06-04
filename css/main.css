@@ -431,6 +431,10 @@ body#galleri .grid main #img6 {
     margin-bottom: 5px;
 }
 
+body#galleri .fadeIn {
+    animation: fadeIn 1s forwards;
+}
+
 body#galleri .lightbox {
     width: 100%;
     height: 100vh;
@@ -454,6 +458,16 @@ body#galleri .lightbox-opened {
     width: 70%;
     z-index: 200;
 }
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fadeOut {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 body#galleri .lightbox-opened img {
     box-shadow: 0 0 6px 3px #333;
     width: 100%;
