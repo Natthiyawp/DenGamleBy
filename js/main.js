@@ -27,12 +27,12 @@ $(function () {
         $('.'+lightboxOpened + "," + '.'+lightbox).on('click', function() {
             // Aktiver scroll igen
             $('body').removeClass('no-scroll');
-            // Fjern figure
-            // Fjern div
-            $(denne).addClass('fadeOut');
             $('.fadeIn').removeClass('fadeIn');
+            $('.'+lightboxOpened).addClass('fadeOut');
             var t   =  setTimeout(function(){
+                // Fjern div
                 $('.'+lightbox).remove();
+                // Fjern figure
                 $('.'+lightboxOpened).remove();
                 
             },500);
