@@ -1,3 +1,4 @@
+/* Standard */
 *{box-sizing: border-box;margin: 0; padding: 0; font-family: Arial, Georgia, 'Times New Roman', serif; letter-spacing: 1px;}
 /* Variables */
 :root {
@@ -7,39 +8,37 @@
     --white: #F1F9FF;
     --gray: #F2F2F2;
 }
-
+/* Baggrundsfarve */
+body {
+    background: var(--white);
+}
+/* Skrifttyper */
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 40px;
 }
-
 h2 {
     font-weight: bold;
     font-size: 30px;
 }
-
 h3 {
     font-size: 20px;
     line-height: 1.5;
 }
-
 p.quote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 20px;
 }
-
 p.large {
     font-weight: bold;
     font-size: 14px;
 }
-
 p {
     font-size: 14px;
     line-height: 1.5;
 }
-
 p.sek {
     font-size: 12px;
 }
@@ -47,15 +46,12 @@ p.placeholder {
     font-style: italic;
     font-size: 12px;
 }
-
 p.button, tr {
     font-weight: bold;
     font-size: 10px;
     text-align: left;
 }
-
 /* Header */
-
 header {
     background-color: var(--blue);
     grid-area: header;
@@ -66,56 +62,41 @@ header nav {
     left: 0;
     width: 15%;
 }
-
+/* Logo */
 header figure svg {
     display: block;
     margin: auto;
     width: 90%;
     padding: 15px 15px;
 }
-
 header figure svg#Layer_1 path {
     fill: var(--white);
 }
-
 header hr {
     color: var(--white);
     border: solid 2px;
 }
-
 header ul {
     list-style: none;
 }
-
 header ul li {
     width: 100%;
     text-align: center;
     padding: 10px;
 }
-
 header ul li a {
     display: flex;
     color: var(--white);
     font-size: 1rem;
     text-decoration: none
 }
-
 header ul li a i.fas {
     min-width: 80px;
 }
-
 header ul li a i.fab {
     min-width: 80px;
 }
-
-/* Header END */
-
-body {
-    background: var(--white);
-}
-
 /* Footer */
-
 footer#footer {
     background: var(--dark-blue);
     color: var(--white);
@@ -126,30 +107,24 @@ footer#footer {
     grid-template-areas:
     "adresse info hours social"
 }
-
 footer#footer #adresse, .info, #hours, #dato, #social {
     margin: auto auto;
 }
-
 footer#footer #adresse {
     grid-area: adresse;
 }
-
 footer#footer .info {
     grid-area: info;
 }
-
 body#forside .grid footer#footer #hours {
     grid-area: hours;
 }
 body#forside .grid footer#footer #hours tr {
     padding: 10px;
 }
-
 body#forside .grid footer#footer #social {
     grid-area: social;
 }
-
 footer#footer p.large {
     padding-bottom: 20px;
 }
@@ -157,11 +132,65 @@ footer#footer #social i {
     -webkit-text-fill-color: var(--white);
     padding: 15px;
 }
+/* Forside - Side */
+/* Forside - Grid */
+body#forside .grid {
+    display: grid;
+    grid-auto-columns: 15% 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 15%;
+    grid-template-areas:
+    "header main main main"
+    "header main main main"
+    "header main main main"
+    "footer footer footer footer "
+}
+body#forside .grid header{
+    grid-area: header;
+}
+body#forside .grid main{
+    grid-area: main;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "vid vid vid"
+    "vid vid vid"
+    "main main main"
+}
 
-/* Footer END */
+body#forside .grid main #video {
+    grid-area: vid;
+}
 
-/* Artikel */
+body#forside .grid main video {
+    width: 100%;
+}
 
+body#forside .grid main #video .text {
+    position: relative;
+    top: -50%;
+    text-align: center;
+    color: var(--white)
+}
+body#forside .grid main #video .text i {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+body#forside .grid main .desc {
+    grid-area: main;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: var(--dark-blue);
+}
+
+body#forside .grid main .desc img {
+    margin: 10px;
+    width: 30%;
+}
+/* Artikel - Side */
+/* Artikel - Grid */
 #Artikel .grid {
     display: grid;
     grid-template-columns: 15% 25% 1fr;
@@ -172,15 +201,12 @@ footer#footer #social i {
     "footer footer footer footer";
     grid-gap: 5px;
 }
-
 #Artikel .grid header {
     grid-area: header;
 }
-
 #Artikel .grid nav {
     grid-area: nav;
 }
-
 #Artikel .article-nav li {
     padding: 10px;
     list-style: none;
@@ -225,69 +251,7 @@ footer#footer #social i {
 #Artikel .grid h2 {
     padding-top: 5px;
 }
-
-/* Artikel END */
-
-/* Forside */
-body#forside .grid {
-    display: grid;
-    grid-auto-columns: 15% 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr 15%;
-    grid-template-areas:
-    "header main main main"
-    "header main main main"
-    "header main main main"
-    "footer footer footer footer "
-}
-body#forside .grid header{
-    grid-area: header;
-}
-
-body#forside .grid main{
-    grid-area: main;
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "vid vid vid"
-    "vid vid vid"
-    "main main main"
-}
-
-body#forside .grid main #video {
-    grid-area: vid;
-}
-
-body#forside .grid main video {
-    width: 100%;
-}
-
-body#forside .grid main #video .text {
-    position: relative;
-    top: -50%;
-    text-align: center;
-    color: var(--white)
-}
-body#forside .grid main #video .text i {
-    margin-top: 50px;
-    font-size: 40px;
-}
-
-body#forside .grid main .desc {
-    grid-area: main;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    color: var(--dark-blue);
-}
-
-body#forside .grid main .desc img {
-    margin: 10px;
-    width: 30%;
-}
-
-/* Tema */
-
+/* Tema - Side */
 /* grid */
 #Tema .grid {
     display: grid;
@@ -299,33 +263,85 @@ body#forside .grid main .desc img {
     "footer footer footer footer";
     grid-gap: 5px;
 }
-
 /* header */
 #Tema .grid header {
     grid-area: header;
 }
-
 /* Tidslinje */
 #Tema .grid #tidslinje {
     grid-area: tidslinje;
     margin-top: 250px;
 }
-
 #Tema .grid #tidslinje ul {
     display: flex;
     flex-wrap: wrap;
 }
+#Tema .grid svg #end {
+    opacity: 0;
+}
+#Tema .grid #tidslinje li {
+    width: 33.33%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#Tema .grid #tidslinje figure {
+    position: relative;
+    padding: 20px;
+}
+#Tema .grid #tidslinje img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+} 
+#Tema .grid #tidslinje figcaption {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #faebd791;
+    width: 45%
+}
+#Tema .grid #tidslinje i{
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#Tema .grid #tidslinje i.fas.down {
+    position: absolute;
+    right: 170px;
+    top: 100%;
+}
+/* Vendespil */
+#Tema .grid .scene {
+    grid-area: spil;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;   
+}
+#Tema .grid .scene .card {
+    /* width: 300px;
+    height: 200px;
+    background-color: var(--gray) */
+}
+#Tema .grid .scene .card .cardFace {}
+/* Footer */
+#Tema .grid footer {
+    grid-area: footer;
+}
 #Tema .grid svg {
     grid-area: tidslinje;
 }
-
+/* Tema - Animation */
 body#Tema .grid svg #start {
     animation: 3s forwards fadeOut;
 }
 body#Tema .grid svg #end {
     animation: 3s forwards fadeIn;
 }
-
 @keyframes fadeIn {
     0% {opacity: 0;};
     100% {opacity: 1;};
@@ -334,78 +350,8 @@ body#Tema .grid svg #end {
     0% {opacity: 1;}
     100% {opacity: 0;}
 }
-#Tema .grid svg #end {
-    opacity: 0;
-}
-
-#Tema .grid #tidslinje li {
-    width: 33.33%;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-#Tema .grid #tidslinje figure {
-    position: relative;
-    padding: 20px;
-}
-
-#Tema .grid #tidslinje img {
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 25px;
-} 
-
-#Tema .grid #tidslinje figcaption {
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 20px;
-    background-color: #faebd791;
-    width: 45%
-}
-
-#Tema .grid #tidslinje i{
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#Tema .grid #tidslinje i.fas.down {
-    position: absolute;
-    right: 170px;
-    top: 100%;
-}
-
-/* Vendespil */
-#Tema .grid .scene {
-    grid-area: spil;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-#Tema .grid .scene .card {
-    /* width: 300px;
-    height: 200px;
-    background-color: var(--gray) */
-}
-
-#Tema .grid .scene .card .cardFace {}
-
-/* Footer */
-#Tema .grid footer {
-    grid-area: footer;
-}
-
-/* Tema END */
-
-/* Footer */
-
+/* Galleri */
+/* Galleri - Grid */
 body#galleri .grid {
     display: grid;
     grid-template-columns: 15% 1fr 1fr 1fr 1fr;
@@ -416,7 +362,6 @@ body#galleri .grid {
     "header main main main main"
     "footer footer footer footer footer"
 }
-
 body#galleri .grid main {
     margin-bottom: 25px;
     grid-area: main;
@@ -428,12 +373,11 @@ body#galleri .grid main {
     "img3 img3 img4 img4"
     "img5 img5 img6 img6"
 }
-
+/* Grid position */
 body#galleri .grid main img {
     width: 100%;
     padding: 5px;
 }
-
 body#galleri .grid main #img1 {
     grid-area: img1;
 }
@@ -453,14 +397,7 @@ body#galleri .grid main #img6 {
     grid-area: img6;
     margin-bottom: 5px;
 }
-
-body#galleri .fadeIn {
-    animation: fadeIn 0.5s forwards;
-}
-body#galleri .fadeOut {
-    animation: fadeOut 0.5s forwards;
-}
-
+/* Lightbox */
 body#galleri .lightbox {
     width: 100%;
     height: 100vh;
@@ -471,7 +408,6 @@ body#galleri .lightbox {
     top: 0;
     left: 0;
 }
-
 body#galleri .lightbox-opened {
     cursor: pointer;
     left: 55%;
@@ -484,7 +420,22 @@ body#galleri .lightbox-opened {
     width: 70%;
     z-index: 200;
 }
-
+body#galleri .lightbox-opened img {
+    box-shadow: 0 0 6px 3px #333;
+    width: 100%;
+    display: block;
+}
+/* Fix No scroll ved lightbox */
+body#galleri.no-scroll {
+    overflow: hidden;
+}
+/* Galleri - Animation */
+body#galleri .fadeIn {
+    animation: fadeIn 0.5s forwards;
+}
+body#galleri .fadeOut {
+    animation: fadeOut 0.5s forwards;
+}
 @keyframes fadeIn {
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -492,14 +443,4 @@ body#galleri .lightbox-opened {
 @keyframes fadeOut {
     0%{opacity: 1;}
     100%{opacity: 0;}
-}
-
-body#galleri .lightbox-opened img {
-    box-shadow: 0 0 6px 3px #333;
-    width: 100%;
-    display: block;
-}
-  
-body#galleri.no-scroll {
-    overflow: hidden;
 }
