@@ -208,8 +208,13 @@ body#forside .grid main .desc img {
     grid-area: nav;
 }
 #Artikel .article-nav {
-    max-height: 1150px;
+    max-height: 1200px;
     overflow: auto; 
+}
+/* Scrollbar - Nav */
+::-webkit-scrollbar {
+    background-color: var(--gray);
+    color: var(--blue);
 }
 #Artikel .article-nav li {
     padding: 10px;
