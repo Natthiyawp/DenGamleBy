@@ -37,5 +37,20 @@ $(function () {
                 
             },500);
         });
+<<<<<<< HEAD
+        // Click on div -> Remove lightbox
+        $('.'+lightbox).on('click', function() {
+            // Aktiver scroll igen
+            $('body').removeClass('no-scroll');
+            // Fjern Figure
+            $('.'+lightboxOpened).remove();
+            // Fjern Div
+            $('.'+lightbox).remove();
+        });
+    } 
+});
+
+=======
     }; 
 });
+>>>>>>> a51e807d56b8b4e04d6c82a258547b816dad1ba0
