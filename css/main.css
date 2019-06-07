@@ -308,11 +308,18 @@ body#forside .grid main .desc img {
 /* Tidslinje */
 #Tema .grid #tidslinje {
     grid-area: tidslinje;
+    margin-top: 250px;
 }
 
 #Tema .grid #tidslinje ul {
     display: flex;
     flex-wrap: wrap;
+}
+#Tema .grid svg {
+    grid-area: tidslinje;
+}
+#Tema .grid svg #end {
+    visibility: hidden;
 }
 
 #Tema .grid #tidslinje li {
