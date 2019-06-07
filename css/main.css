@@ -318,8 +318,24 @@ body#forside .grid main .desc img {
 #Tema .grid svg {
     grid-area: tidslinje;
 }
+
+body#Tema .grid svg #start {
+    animation: 3s forwards fadeOut;
+}
+body#Tema .grid svg #end {
+    animation: 3s forwards fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;};
+    100% {opacity: 1;};
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 #Tema .grid svg #end {
-    visibility: hidden;
+    opacity: 0;
 }
 
 #Tema .grid #tidslinje li {
