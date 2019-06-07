@@ -1,7 +1,7 @@
 $(function () {
     "use script";
     // Antal kort
-    var cardList        =   newCard(12);
+    var cardList        =   newCard(3);
     // Bland kortene
     var allCard = shuffleArray(cardList);
     // Append card(li) til ul
