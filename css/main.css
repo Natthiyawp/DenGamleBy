@@ -207,6 +207,10 @@ body#forside .grid main .desc img {
 #Artikel .grid nav {
     grid-area: nav;
 }
+#Artikel .article-nav {
+    max-height: 1150px;
+    overflow: auto; 
+}
 #Artikel .article-nav li {
     padding: 10px;
     list-style: none;
