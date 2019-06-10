@@ -221,7 +221,7 @@ body#forside .grid main .desc img {
     list-style: none;
 }
 
-#Artikel .article-nav figure.img img{
+#Artikel .grid nav figure.img img{
     width: 100%;
     border: 5px solid gray;
     border-radius: 5px;
@@ -247,6 +247,10 @@ body#forside .grid main .desc img {
     padding: 10px 30px;
 }
 
+#srtikel .grid p.large.ser {
+
+}
+
 #Artikel .grid p {
     padding: 10px;
 }
@@ -260,6 +264,8 @@ body#forside .grid main .desc img {
 #Artikel .grid h2 {
     padding-top: 5px;
 }
+/* Artikel END */
+
 /* Tema - Side */
 /* grid */
 #Tema .grid {
@@ -355,6 +361,11 @@ body#forside .grid main .desc img {
     background: blue;
     transform: rotateY( 180deg );
   }
+
+#Tema .grid .back img {
+    width: 70%;
+    height: 100%;
+}
 #Tema .grid .card.is-flipped {
     transform: translateX(-100%) rotateY(-180deg);
   }
