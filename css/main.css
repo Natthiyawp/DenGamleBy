@@ -410,21 +410,6 @@ body#Tema .grid svg #end {
     100% {opacity: 0;}
 }
 /* Galleri */
-/* Media */
-@media screen and (max-width:801px) {
-	body#galleri .grid {
-        display: grid;
-        grid-template-columns: 15% 1fr;
-        grid-template-rows: 1fr 15%;
-        grid-template-areas: 
-        "header main"
-        "footer footer"
-    }
-    body#galleri .grid main {
-        grid-area: main;
-        grid-template-columns: 100%;
-    }
- }
 /* Galleri - Grid */
 body#galleri .grid {
     display: grid;
