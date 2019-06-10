@@ -183,6 +183,7 @@ body#forside .grid main .desc {
     width: 50%;
     margin: 0 auto;
     color: var(--dark-blue);
+    letter-spacing: 0;
 }
 
 body#forside .grid main .desc img {
@@ -410,16 +411,7 @@ body#Tema .grid svg #end {
     }
     body#galleri .grid main {
         grid-area: main;
-        display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6"
     }
  }
 /* Galleri - Grid */
