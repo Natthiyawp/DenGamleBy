@@ -183,7 +183,6 @@ body#forside .grid main .desc {
     width: 50%;
     margin: 0 auto;
     color: var(--dark-blue);
-    letter-spacing: 0;
 }
 
 body#forside .grid main .desc img {
