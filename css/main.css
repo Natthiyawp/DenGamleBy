@@ -206,17 +206,17 @@ body#forside .grid main .desc img {
 }
 #Artikel .grid nav {
     grid-area: nav;
-}
-#Artikel .article-nav {
     max-height: 1200px;
-    overflow: auto; 
+    overflow: auto;
+    display: block; 
 }
+
 /* Scrollbar - Nav */
 ::-webkit-scrollbar {
     background-color: var(--gray);
     color: var(--blue);
 }
-#Artikel .article-nav li {
+#Artikel .grid nav li {
     padding: 10px;
     list-style: none;
 }
