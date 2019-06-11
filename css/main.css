@@ -266,11 +266,12 @@ body#forside .grid main .desc img {
 }
 
 #srtikel .grid p.large.ser {
-
+    display: 
 }
 
-#Artikel .grid p {
+#Artikel .grid p.large.none {
     padding: 10px;
+    display: none;
 }
 
 #Artikel .grid h1 {
