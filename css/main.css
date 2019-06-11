@@ -132,6 +132,23 @@ footer#footer #social i {
     -webkit-text-fill-color: var(--white);
     padding: 15px;
 }
+
+/* Mobil tilpasning */
+@media screen and (max-width:801px) {
+    /* Galleri */
+    body#galleri .grid {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        grid-template-rows: 1fr 15%;
+        grid-template-areas:
+        "header main"
+        "footer footer"
+    }
+    body#galleri .grid main {
+        grid-area: main;
+        grid-template-columns: 100%;
+    }
+}
 /* Forside - Side */
 /* Forside - Grid */
 body#forside .grid {
@@ -183,6 +200,7 @@ body#forside .grid main .desc {
     width: 50%;
     margin: 0 auto;
     color: var(--dark-blue);
+    letter-spacing: 0;
 }
 
 body#forside .grid main .desc img {
@@ -469,7 +487,6 @@ body#galleri .lightbox {
 body#galleri .lightbox-opened {
     cursor: pointer;
     left: 55%;
-    overflow-y: scroll;
     padding: 24px;
     position: fixed;
     text-align: center;
