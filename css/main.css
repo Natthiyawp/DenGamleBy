@@ -268,7 +268,7 @@ body#forside .grid main .desc img {
 
 #Artikel .grid p.large.none {
     padding: 10px;
-    display: none;
+    /* display: none; */
 }
 
 #Artikel .grid h1 {
@@ -364,7 +364,6 @@ body#forside .grid main .desc img {
     text-align: center;
     transform-origin: center right;
 }
-#Tema .grid .scene .card .cardFace {}
 
 #Tema .grid .scene .card .cardFace {
     position: absolute;
