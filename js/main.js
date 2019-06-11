@@ -5,7 +5,7 @@ $(function () {
     var figure      =   $('figure');
     // Finder alle figures
     function openLightbox(figure) {
-        console.log(figure);
+        // console.log(figure);
         figure.on('click', function(e) {
             var denne   =   $(this);
             e.preventDefault();
@@ -46,5 +46,5 @@ $(function () {
             // Fjern Div
             $('.'+lightbox).remove();
         });
-    } 
+    }; 
 });
