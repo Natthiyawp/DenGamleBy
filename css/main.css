@@ -159,7 +159,7 @@ body#forside .grid {
     "header main main main"
     "header main main main"
     "header main main main"
-    "footer footer footer footer "
+    "footer footer footer footer";
 }
 body#forside .grid header{
     grid-area: header;
@@ -268,7 +268,6 @@ body#forside .grid main .desc img {
 
 #Artikel .grid p.large.none {
     padding: 10px;
-    /* display: none; */
 }
 
 #Artikel .grid h1 {
